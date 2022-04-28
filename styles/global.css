@@ -1,0 +1,75 @@
+:root {
+    --primary-color: blue;
+    --primary-color-contrast: white;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: lightgrey;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-content {
+    margin: 1vh 0;
+    width: 80vw;
+    display: grid;
+    grid-gap: 1vw;
+}
+
+.page {
+    box-sizing: border-box;
+    padding: 2vh 5vw;
+    background-color: white;
+    box-shadow: 0px 0 5px 2px grey;
+}
+
+#identity {
+    margin-left: 10vw;
+    display: grid;
+}
+
+#cv {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+#identity, #self-description, #work-experiance {
+    grid-column: span 2;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+#skills {
+    display: grid;
+    justify-items: center;
+}
+
+#skills > ul {
+    display: grid;
+    grid-gap: .2vw;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#skills > ul > li {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid lightgrey;
+    padding: .5vw;
+}
+
+sub {
+    display: block;
+}
+
+#cv > #education, #cv > #skills, #cv > #work-experiance {
+    border: 1px solid lightgrey;
+    padding: 1vw;
+}
