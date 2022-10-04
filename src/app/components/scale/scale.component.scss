@@ -1,0 +1,26 @@
+div#scale-container {
+    display: grid;
+}
+
+#pillbox {
+    display: grid;
+    border: lightgray 1px solid;
+    border-radius: 7px;
+    width: min-content;
+    grid-gap: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.pill {
+    height: inherit;
+    min-width: .5rem;
+    height: .5rem;
+    border-radius: 10px;
+
+    &.on {
+        // border: lightgray 1px solid;
+        background-color: lightgray;
+        border: lightgray solid .5px;
+    }
+}

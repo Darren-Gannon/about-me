@@ -1,0 +1,6 @@
+<div id="scale-container">
+    <span *ngIf="label" id="label">{{ label }}</span>
+    <div id="pillbox" [style.grid-template-columns]="numCols()">
+        <span class="pill" [ngClass]="{on: val}" *ngFor="let val of values"></span>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+#cv {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: stretch;
+    & > app-identity, app-work-experiance, app-tech-stack {
+        grid-column: span 2;
+    }
+}
+
+@media print {
+    app-work-experiance {
+        break-before: always;
+        break-after: always;
+    }
+}

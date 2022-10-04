@@ -1,0 +1,11 @@
+<div id="job-container">
+    <h3>{{ job.title }}</h3>
+    <span class="span">{{ job.company }}</span>
+    <span class="span" id="date">{{ job.start | date : 'y' }} - {{ formatEndDate(job.end) }}</span>
+    <div>
+        <p *ngFor="let paragraph of job.description.split('\n')">{{ paragraph }}</p>
+    </div>
+    <span>
+        Reason for leaving: {{ job.reasonForLeaving }}
+    </span>
+</div>

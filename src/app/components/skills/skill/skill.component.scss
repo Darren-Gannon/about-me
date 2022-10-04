@@ -1,0 +1,13 @@
+div {
+    display: grid;
+    grid-template-areas: 'title title exp';
+
+    &> .title {
+        grid-area: title;
+    }
+
+    &> .experiance {
+        grid-area: exp;
+        justify-self: end;
+    }
+}
