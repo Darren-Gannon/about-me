@@ -16,7 +16,7 @@ export class CvPageComponent {
       company: 'Turnbuckle Digital Design & Development',
       start: new Date(2018, 0, 1),
       end: new Date(),
-      description: 'Developed a fill stack application for financial risk and management reporting. It uses mssql, nodejs with expressjs, with and angular frontend. It supports both RESTful and GraphQL requests. Additional features include whitelableing and multi-tenancy. The application is used by several clients, noteworthy being KPMG, BDigital and Rentworks.',
+      description: 'Developed a full stack application for financial risk and management reporting. It uses mssql, nodejs with expressjs, with and angular frontend. It supports both RESTful and GraphQL requests. Additional features include whitelableing and multi-tenancy. The application is used by several clients, noteworthy being KPMG, BDigital and Rentworks.',
       reasonForLeaving: "I'm looking for a new challenge."
     },
     {
@@ -25,7 +25,7 @@ export class CvPageComponent {
       start: new Date(2016, 0, 1),
       end: new Date(2018, 0, 1),
       description: 
-`At Stuart King & Associates I built a fill stack travel site similar to bookings.com or trivargo.com. Here I used a Java backend and a web app built with JQuery. This integrated with 3rd party providers such as Flightline, Amadeus and Sabre. The purpose was to optimise long distance travel for the customer between the different providers.
+`At Stuart King & Associates I built a full stack travel site similar to bookings.com or trivargo.com. Here I used a Java backend and a web app built with JQuery. This integrated with 3rd party providers such as Flightline, Amadeus and Sabre. The purpose was to optimise long distance travel for the customer between the different providers.
 At Ice Mobile I developed an online storefront Android app, similar to the Steam games mobile platform. This was built with the android SDK and an inhouse API.`,
       reasonForLeaving: 'Our contract was completed and fulfilled.'
     },
