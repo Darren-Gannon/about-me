@@ -15,7 +15,7 @@ export class CvPageComponent {
       title: 'Senior Full Stack Developer',
       company: 'Turnbuckle Digital Design & Development',
       start: new Date(2018, 0, 1),
-      end: new Date(),
+      end: new Date(2023, 3, 11),
       description: 'Developed a full stack application for financial risk and management reporting. It uses mssql, nodejs with expressjs, with and angular frontend. It supports both RESTful and GraphQL requests. Additional features include whitelableing and multi-tenancy. The application is used by several clients, noteworthy being KPMG, BDigital and Rentworks.',
       reasonForLeaving: "I'm looking for a new challenge."
     },
