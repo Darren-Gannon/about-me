@@ -23,7 +23,7 @@ export interface Job {
   title: string;
   company: string;
   start: Date;
-  end: Date;
+  end?: Date;
   description: string;
   reasonForLeaving: string;
 }
