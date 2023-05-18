@@ -16,7 +16,7 @@ export class CvPageComponent {
       company: 'Turnbuckle Digital Design & Development',
       start: new Date(2018, 0, 1),
       end: new Date(2023, 3, 11),
-      description: 'Developed a full stack application for financial risk and management reporting. It uses mssql, nodejs with expressjs, with and angular frontend. It supports both RESTful and GraphQL requests. Additional features include whitelableing and multi-tenancy. The application is used by several clients, noteworthy being KPMG, BDigital and Rentworks.',
+      description: 'I designed and built a comprehensive full stack application specializing in financial risk and management reporting. Leveraging a combination of MSSQL, Node.js with Express.js, and Angular for the frontend, the application seamlessly caters to both RESTful and GraphQL requests. Notably, it incorporates advanced features such as whitelabeling and multi-tenancy to meet the diverse needs of our clients. Noteworthy organizations, including KPMG, BDigital, and Rentworks, rely on this application for their critical financial operations.',
       reasonForLeaving: "I'm looking for a new challenge."
     },
     {
@@ -25,8 +25,9 @@ export class CvPageComponent {
       start: new Date(2016, 0, 1),
       end: new Date(2018, 0, 1),
       description: 
-`At Stuart King & Associates I built a full stack travel site similar to bookings.com or trivargo.com. Here I used a Java backend and a web app built with JQuery. This integrated with 3rd party providers such as Flightline, Amadeus and Sabre. The purpose was to optimise long distance travel for the customer between the different providers.
-At Ice Mobile I developed an online storefront Android app, similar to the Steam games mobile platform. This was built with the android SDK and an inhouse API.`,
+`During my tenure at Stuart King & Associates, I spearheaded the development of a full stack travel website akin to renowned platforms like bookings.com or trivago.com. This project entailed leveraging a Java backend and a web application constructed with JQuery. Seamlessly integrating with third-party providers such as Flightline, Amadeus, and Sabre, our goal was to optimize long-distance travel for customers by facilitating seamless transitions between different service providers.
+
+Additionally, at Ice Mobile, I played a pivotal role in creating an Android-based online storefront application, similar to the popular Steam games mobile platform. Utilizing the Android SDK and an in-house API, I successfully developed an intuitive and user-friendly mobile app that provided customers with access to a wide range of products.`,
       reasonForLeaving: 'Our contract was completed and fulfilled.'
     },
     {
@@ -34,7 +35,7 @@ At Ice Mobile I developed an online storefront Android app, similar to the Steam
       company: 'Kip McGrath Education Center',
       start: new Date(2015, 0, 1),
       end: new Date(2016, 0, 1),
-      description: 'While at university, I lectured part-time in Information Technology to scholars studying towards matric.',
+      description: 'During my time at university, I had the privilege of serving as a part-time lecturer in Information Technology, imparting knowledge to scholars who were pursuing their matriculation. This role involved delivering lectures, conducting interactive sessions, and providing guidance and support to students as they navigated the intricacies of the subject matter. By effectively communicating complex concepts in a simplified manner, I fostered an engaging learning environment that helped students develop a solid foundation in Information Technology.',
       reasonForLeaving: 'I left to focus on my studies.'
     },
   ];
@@ -80,7 +81,7 @@ At Ice Mobile I developed an online storefront Android app, similar to the Steam
       title: 'Docker',
       since: new Date(2017, 0, 1),
       enthusiasm: 5,
-      competence: 3,
+      competence: 4,
     },
     {
       title: 'MongoDB',
@@ -113,7 +114,7 @@ At Ice Mobile I developed an online storefront Android app, similar to the Steam
       title: 'BSc Information Technology',
       school: 'University of Johannesburg',
       year: '2013-2016',
-      description: '*Incomplete',
+      description: 'While I have not yet completed my university degree, I am eager to pursue its completion should an employer provide me with the opportunity to do so.',
     },
     {
       title: 'Matric Exemption',
