@@ -1,7 +1,12 @@
-<article id="cv">
-    <app-identity></app-identity>
-    <app-education class="border" [courses]="courses"></app-education>
-    <app-skills class="border" [skills]="skills"></app-skills>
-    <!-- <app-technologies class="border"></app-technologies> -->
-    <app-work-experiance class="border" [jobs]="jobs"></app-work-experiance>
+<article id="cv" class="container">
+    <div class="row">
+        <app-identity class="col-12"></app-identity>
+    </div>
+    <div class="row">
+        <app-skills class="col-xs-12 col-md-6" [skills]="skills"></app-skills>
+        <app-education class="col-xs-12 col-md-6" [courses]="courses"></app-education>
+    </div>
+    <div class="row">
+        <app-work-experiance class="col-12" [jobs]="jobs"></app-work-experiance>
+    </div>
 </article>

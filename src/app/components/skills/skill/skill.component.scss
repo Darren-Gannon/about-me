@@ -1,6 +1,7 @@
 div {
     display: grid;
     grid-template-areas: 'title title exp';
+    grid-template-columns: 2fr 2fr 1fr;
 
     &> .title {
         grid-area: title;
