@@ -12,9 +12,17 @@ export class CvPageComponent {
 
   jobs: Job[] = [
     {
+      title: 'Software Developer',
+      company: 'Intershu',
+      start: new Date(2023, 3, 12),
+      // end: ,
+      description: 'I contributed to the development of various internal applications aimed at enhancing business processes and providing users with streamlined access to Microsoft GP and Warehouse Pro. Leveraging a mix of technologies, including ASP.NET, Angular, PHP, and NestJs, I actively participated in designing, building, and maintaining these applications. These internal tools played a critical role in maintaining operational efficiency throughout the organization and our subsidaries.',
+      reasonForLeaving: 'Seeking a more aligned and effective work environment'
+    },
+    {
       title: 'Senior Full Stack Developer',
       company: 'Turnbuckle Digital Design & Development',
-      start: new Date(2018, 0, 1),
+      start: new Date(2018, 9, 1),
       end: new Date(2023, 3, 11),
       description: 'I designed and built a comprehensive full stack application specializing in financial risk and management reporting. Leveraging a combination of MSSQL, Node.js with Express.js, and Angular for the frontend, the application seamlessly caters to both RESTful and GraphQL requests. Notably, it incorporates advanced features such as whitelabeling and multi-tenancy to meet the diverse needs of our clients. Noteworthy organizations, including KPMG, BDigital, and Rentworks, rely on this application for their critical financial operations.',
       reasonForLeaving: "I'm looking for a new challenge."
@@ -22,8 +30,8 @@ export class CvPageComponent {
     {
       title: 'Developer / Junior Developer',
       company: 'While contracted to Van Zyl & Pritchard I worked for Stuart King & Associates, and Ice Mobile Telecommunications',
-      start: new Date(2016, 0, 1),
-      end: new Date(2018, 0, 1),
+      start: new Date(2016, 9, 1),
+      end: new Date(2018, 9, 1),
       description: 
 `During my tenure at Stuart King & Associates, I spearheaded the development of a full stack travel website akin to renowned platforms like bookings.com or trivago.com. This project entailed leveraging a Java backend and a web application constructed with JQuery. Seamlessly integrating with third-party providers such as Flightline, Amadeus, and Sabre, our goal was to optimize long-distance travel for customers by facilitating seamless transitions between different service providers.
 
@@ -33,8 +41,8 @@ Additionally, at Ice Mobile, I played a pivotal role in creating an Android-base
     {
       title: 'Information Technology Lecturer',
       company: 'Kip McGrath Education Center',
-      start: new Date(2015, 0, 1),
-      end: new Date(2016, 0, 1),
+      start: new Date(2015, 4, 1),
+      end: new Date(2016, 10, 1),
       description: 'During my time at university, I had the privilege of serving as a part-time lecturer in Information Technology, imparting knowledge to scholars who were pursuing their matriculation. This role involved delivering lectures, conducting interactive sessions, and providing guidance and support to students as they navigated the intricacies of the subject matter. By effectively communicating complex concepts in a simplified manner, I fostered an engaging learning environment that helped students develop a solid foundation in Information Technology.',
       reasonForLeaving: 'I left to focus on my studies.'
     },

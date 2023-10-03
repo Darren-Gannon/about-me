@@ -1,7 +1,7 @@
 <div id="job-container">
     <h3>{{ job.title }}</h3>
     <span class="span">{{ job.company }}</span>
-    <span class="span" id="date">{{ job.start | date : 'y' }} - {{ job.end ? (job.end | date : 'yyyy') : 'Present'  }}</span>
+    <span class="span" id="date">{{ job.start | date : 'MMMM yyyy' }} - {{ job.end ? (job.end | date : 'MMMM yyyy') : 'Present'  }}</span>
     <div>
         <p *ngFor="let paragraph of job.description.split('\n')">{{ paragraph }}</p>
     </div>
