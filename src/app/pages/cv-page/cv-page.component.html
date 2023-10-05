@@ -10,10 +10,155 @@
         </app-identity>
     </div>
     <div class="row">
-        <app-skills class="col-xs-12 col-md-6" [skills]="skills"></app-skills>
-        <app-education class="col-xs-12 col-md-6" [courses]="courses"></app-education>
+        <app-card class="col-xs-12 col-md-6">
+            <h2 title>Skills</h2>
+            <div id="skills-container">
+                <app-dated-item>
+                    <span title>Back-end Development</span>
+                    <span date>{{ calculateExperiance('2016-01-01') }} years</span>
+                    <app-scale label="Competence" value="5" max="5"></app-scale>
+                    <app-scale label="Enthusiasm" value="5" max="5"></app-scale>
+                </app-dated-item>
+                <app-dated-item>
+                    <span title>Full stack Development</span>
+                    <span date>{{ calculateExperiance('2017-01-01') }} years</span>
+                    <app-scale label="Competence" value="5" max="5"></app-scale>
+                    <app-scale label="Enthusiasm" value="5" max="5"></app-scale>
+                </app-dated-item>
+                <app-dated-item>
+                    <span title>JavaScript / Typescript / NodeJs</span>
+                    <span date>{{ calculateExperiance('2016-01-01') }} years</span>
+                    <app-scale label="Competence" value="5" max="5"></app-scale>
+                    <app-scale label="Enthusiasm" value="5" max="5"></app-scale>
+                </app-dated-item>
+                <app-dated-item>
+                    <span title>Git</span>
+                    <span date>{{ calculateExperiance('2016-01-01') }} years</span>
+                    <app-scale label="Competence" value="4" max="5"></app-scale>
+                    <app-scale label="Enthusiasm" value="4" max="5"></app-scale>
+                </app-dated-item>
+                <app-dated-item>
+                    <span title>SQL</span>
+                    <span date>{{ calculateExperiance('2011-01-01') }} years</span>
+                    <app-scale label="Competence" value="4" max="5"></app-scale>
+                    <app-scale label="Enthusiasm" value="2" max="5"></app-scale>
+                </app-dated-item>
+                <app-dated-item>
+                    <span title>Java</span>
+                    <span date>{{ calculateExperiance('2010-01-01') }} years</span>
+                    <app-scale label="Competence" value="4" max="5"></app-scale>
+                    <app-scale label="Enthusiasm" value="3" max="5"></app-scale>
+                </app-dated-item>
+                <app-dated-item>
+                    <span title>Docker</span>
+                    <span date>{{ calculateExperiance('2017-01-01') }} years</span>
+                    <app-scale label="Competence" value="4" max="5"></app-scale>
+                    <app-scale label="Enthusiasm" value="5" max="5"></app-scale>
+                </app-dated-item>
+                <app-dated-item>
+                    <span title>MongoDB</span>
+                    <span date>{{ calculateExperiance('2015-01-01') }} years</span>
+                    <app-scale label="Competence" value="3" max="5"></app-scale>
+                    <app-scale label="Enthusiasm" value="3" max="5"></app-scale>
+                </app-dated-item>
+                <app-dated-item>
+                    <span title>Firebase</span>
+                    <span date>{{ calculateExperiance('2016-01-01') }} years</span>
+                    <app-scale label="Competence" value="3" max="5"></app-scale>
+                    <app-scale label="Enthusiasm" value="3" max="5"></app-scale>
+                </app-dated-item>
+                <app-dated-item>
+                    <span title>Project Management</span>
+                    <span date>{{ calculateExperiance('2018-01-01') }} years</span>
+                    <app-scale label="Competence" value="4" max="5"></app-scale>
+                    <app-scale label="Enthusiasm" value="4" max="5"></app-scale>
+                </app-dated-item>
+            </div>
+        </app-card>
+        <app-card class="col-xs-12 col-md-6">
+            <h2 title>Education</h2>
+            <div id="courses-container">
+                <app-dated-item>
+                    <h3 title>Java Programming Course</h3>
+                    <span date>2016</span>
+                    <div>
+                        <span>Van Zyl & Pritchard</span>
+                        <p>Full-time program and thereafter two-year service tie-back.</p>
+                    </div>
+                </app-dated-item>
+                <app-dated-item>
+                    <h3 title>BSc Information Technology</h3>
+                    <span date>2013-2016</span>
+                    <div>
+                        <span>University of Johannesburg</span>
+                        <p>While I have not yet completed my university degree, I am eager to pursue its completion should an employer provide me with the opportunity to do so.</p>
+                    </div>
+                </app-dated-item>
+                <app-dated-item>
+                    <h3 title>Matric Exemption</h3>
+                    <span date>2012</span>
+                    <div>
+                        <span>Heronbridge College</span>
+                        <p>While I have not yet completed my university degree, I am eager to pursue its completion should an employer provide me with the opportunity to do so.</p>
+                    </div>
+                </app-dated-item>
+            </div>
+        </app-card>
     </div>
     <div class="row">
-        <app-work-experiance class="col-12" [jobs]="jobs"></app-work-experiance>
+        <app-card class="col-12">
+            <h2 title>Work Experiance</h2>
+            <div id="jobs-container">
+                
+                <app-dated-item>
+                    <h3 title>Software Developer</h3>
+                    <span date>{{ '2013-04-12' | date : 'MMMM yyyy' }} - {{ 'Present' }}</span>
+                    <div>
+                        <h4>Intershu</h4>
+                        <p>I contributed to the development of various internal applications aimed at enhancing business processes and providing users with streamlined access to Microsoft GP and Warehouse Pro. Leveraging a mix of technologies, including ASP.NET, Angular, PHP, and NestJs, I actively participated in designing, building, and maintaining these applications. These internal tools played a critical role in maintaining operational efficiency throughout the organization and our subsidaries</p>
+                        <span>
+                            Reason for leaving: Seeking a more aligned and effective work environment
+                        </span>
+                    </div>
+                </app-dated-item>
+                <app-dated-item>
+                    <h3 title>Senior Full Stack Developer</h3>
+                    <span date>{{ '2018-08-01' | date : 'MMMM yyyy' }} - {{ '2023-04-11' | date : 'MMMM yyyy' }}</span>
+                    <div>
+                        <h4>Turnbuckle Digital Design & Development</h4>
+                        <p>I designed and built a comprehensive full stack application specializing in financial risk and management reporting. Leveraging a combination of MSSQL, Node.js with Express.js, and Angular for the frontend, the application seamlessly caters to both RESTful and GraphQL requests. Notably, it incorporates advanced features such as whitelabeling and multi-tenancy to meet the diverse needs of our clients. Noteworthy organizations, including KPMG, BDigital, and Rentworks, rely on this application for their critical financial operations.</p>
+                        <span>
+                            Reason for leaving: I'm looking for a new challenge.
+                        </span>
+                    </div>
+                </app-dated-item>
+
+                <app-dated-item>
+                    <h3 title>Developer / Junior Developer</h3>
+                    <span date>{{ '2016-08-01' | date : 'MMMM yyyy' }} - {{ '2018-08-01' | date : 'MMMM yyyy' }}</span>
+                    <div>
+                        <h4>Van Zyl & Pritchard</h4>
+                        <span>While contracted to Van Zyl & Pritchard I worked for Stuart King & Associates, and Ice Mobile Telecommunications</span>
+                        <p>During my tenure at Stuart King & Associates, I spearheaded the development of a full stack travel website akin to renowned platforms like bookings.com or trivago.com. This project entailed leveraging a Java backend and a web application constructed with JQuery. Seamlessly integrating with third-party providers such as Flightline, Amadeus, and Sabre, our goal was to optimize long-distance travel for customers by facilitating seamless transitions between different service providers.</p>
+                        <p>Additionally, at Ice Mobile, I played a pivotal role in creating an Android-based online storefront application, similar to the popular Steam games mobile platform. Utilizing the Android SDK and an in-house API, I successfully developed an intuitive and user-friendly mobile app that provided customers with access to a wide range of products.</p>
+                        <span>
+                            Reason for leaving: Our contract was completed and fulfilled.
+                        </span>
+                    </div>
+                </app-dated-item>
+
+                <app-dated-item>
+                    <h3 title>IT Lecturer</h3>
+                    <span date>{{ '2015-05-01' | date : 'MMMM yyyy' }} - {{ '2016-10-01' | date : 'MMMM yyyy' }}</span>
+                    <div>
+                        <h4>Kip McGrath Education Center</h4>
+                        <p>During my time at university, I had the privilege of serving as a part-time lecturer in Information Technology, imparting knowledge to scholars who were pursuing their matriculation. This role involved delivering lectures, conducting interactive sessions, and providing guidance and support to students as they navigated the intricacies of the subject matter. By effectively communicating complex concepts in a simplified manner, I fostered an engaging learning environment that helped students develop a solid foundation in Information Technology.</p>
+                        <span>
+                            Reason for leaving: I left to focus on my studies.
+                        </span>
+                    </div>
+                </app-dated-item>
+            </div>
+        </app-card>
     </div>
 </article>

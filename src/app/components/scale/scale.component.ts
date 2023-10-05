@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { BehaviorSubject, map, combineLatest } from 'rxjs';
 
 @Component({
   selector: 'app-scale[value][max]',
@@ -6,22 +7,36 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./scale.component.scss']
 })
 export class ScaleComponent implements OnInit {
+
+  private readonly max_ = new BehaviorSubject<number>(0);
+  public readonly max$ = this.max_.asObservable();
+
   @Input()
-  max!: number;
+  public max!: number | string;
   
   @Input()
-  value!: number;
+  public value!: number | string;
+
+  private readonly value_ = new BehaviorSubject<number>(0);
+  public readonly value$ = this.value_.asObservable();
+  public readonly values$ = combineLatest([
+    this.max$,
+    this.value$,
+  ]).pipe(
+    map(([max, value]) => new Array(max).fill(0).map((val, index) => index < value))
+  );
   
-  values!: boolean[];
+  public values!: boolean[];
   
   @Input()
-  label?: string;
+  public label?: string;
 
   ngOnInit(): void {
-    this.values = new Array(this.max).fill(0).map((val, index) => index < this.value);
+    this.max_.next(+this.max);
+    this.value_.next(+this.value);
   }
 
-  numCols() {
-    return `repeat(${this.max},  1fr)`;
+  numCols(max: number) {
+    return `repeat(${max},  1fr)`;
   }
 }

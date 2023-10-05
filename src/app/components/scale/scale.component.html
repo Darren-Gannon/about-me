@@ -1,6 +1,13 @@
-<div id="scale-container">
-    <span *ngIf="label" id="label">{{ label }}</span>
-    <div id="pillbox" [style.grid-template-columns]="numCols()">
-        <span class="pill" [ngClass]="{on: val}" *ngFor="let val of values"></span>
+<ng-container *ngIf="{
+    max: max$ | async,
+    values: values$ | async
+} as vm">
+    <div id="scale-container">
+        <span *ngIf="label" id="label">{{ label }}</span>
+        <ng-container *ngIf="vm.max as max">
+            <div id="pillbox" [style.grid-template-columns]="numCols(max)">
+                <span class="pill" [ngClass]="{on: val}" *ngFor="let val of vm.values"></span>
+            </div>
+        </ng-container>
     </div>
-</div>
+</ng-container>

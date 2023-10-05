@@ -1,8 +1,0 @@
-div > *:not(:last-child) {
-    &::after {
-        display: inline-block;
-        content: '';
-        min-width: 100%;
-        border-bottom: 1px solid lightgray;
-    }
-}

@@ -11,3 +11,12 @@
     padding: 1vh 1vw;
     margin: 1vh 1vw;
 }
+
+$hSizes: 1,2,3,4,5,6;
+
+@each $hSize in $hSizes {
+    h#{$hSize} {
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -8,3 +8,21 @@
 .row {
     margin-bottom: 1vh;
 }
+
+#skills-container, #courses-container, #jobs-container  {
+    @extend .list-container;
+}
+
+.list-container {
+    margin-bottom: 1rem;
+    
+    & > *:not(:last-child)  {
+    
+        &::after {
+            display: inline-block;
+            content: '';
+            min-width: 100%;
+            border-bottom: 1px solid lightgray;
+        }
+    }
+}
