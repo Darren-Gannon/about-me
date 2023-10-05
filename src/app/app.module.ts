@@ -12,6 +12,7 @@ import { SkillComponent } from './components/skills/skill/skill.component';
 import { IdentityComponent } from './components/identity/identity.component';
 import { CourseComponent } from './components/education/course/course.component';
 import { ScaleComponent } from './components/scale/scale.component';
+import { IdentityLinkComponent } from './components/identity/identity-link/identity-link.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ScaleComponent } from './components/scale/scale.component';
     IdentityComponent,
     CourseComponent,
     ScaleComponent,
+    IdentityLinkComponent,
   ],
   imports: [
     BrowserModule,

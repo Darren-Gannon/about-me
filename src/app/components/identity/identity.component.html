@@ -1,15 +1,11 @@
 <div class="glass">
     <section id="identity">
-        <h1>Darren Gannon</h1>
-        <a href="mailto: darrengannon93@gmail.com">darrengannon93@gmail.com</a>
-        <a href="https://github.com/Darren-Gannon" target="_blank">
-            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="">
-        </a>
-        <a href="https://www.npmjs.com/~darren_gannon" target="_blank">
-            <img src="https://raw.githubusercontent.com/npm/logos/master/npm%20logo/npm-logo-red.svg" alt="">
-        </a>
+        <h1><ng-content select="[name]"></ng-content></h1>
     </section>
-    <p id="self-description">
-        As a full stack developer with a strong grasp of business dynamics, I possess a unique ability to navigate development projects within the confines of practical constraints. I understand the importance of balancing technical excellence with business objectives and am skilled at effectively managing resources, timelines, and budgets. By carefully assessing project requirements and collaborating closely with stakeholders, I ensure that development initiatives align with the organization's goals while delivering optimal results. My experience in handling business limitations allows me to make informed decisions, prioritize tasks, and implement creative solutions that maximize value and drive success.
-    </p>
+    <div id="links">
+        <ng-content select="[link]"></ng-content>
+    </div>
+    <div id="self-description">
+        <ng-content select="[description]"></ng-content>
+    </div>
 </div>
