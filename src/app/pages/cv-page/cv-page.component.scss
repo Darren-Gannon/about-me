@@ -1,28 +1,70 @@
-@media print {
-    app-work-experiance {
-        break-before: always;
-        break-after: always;
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+    gap: .5rem;
+
+    > * {
+        max-width: 900px;
     }
-}
-
-.row {
-    margin-bottom: 1vh;
-}
-
-#skills-container, #courses-container, #jobs-container  {
-    @extend .list-container;
-}
-
-.list-container {
-    margin-bottom: 1rem;
     
-    & > *:not(:last-child)  {
-    
-        &::after {
-            display: inline-block;
-            content: '';
-            min-width: 100%;
-            border-bottom: 1px solid lightgray;
+}
+
+.glass {
+    backdrop-filter: blur(5px) brightness(110%);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+#identity-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    @extend .glass;
+
+    > #website-badge-list-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: .5rem;
+        
+        > .website-badge > img {
+            height: 2rem;
         }
     }
+}
+
+#skills-and-education-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5rem;
+
+    > * {
+        @extend .glass;
+        flex: 1;
+        flex-grow: 1;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+
+#work-experiance-container {
+    @extend .glass;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    justify-content: space-between;
 }

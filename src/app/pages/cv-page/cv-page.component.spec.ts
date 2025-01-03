@@ -8,12 +8,10 @@ describe('CvPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CvPageComponent ]
+      imports: [CvPageComponent]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(CvPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
