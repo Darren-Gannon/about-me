@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "deployUrl": "/about-me/",
             "outputPath": "docs",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -38,6 +39,7 @@
           },
           "configurations": {
             "production": {
+
               "baseHref": "/about-me/",
               "budgets": [
                 {
